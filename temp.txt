@@ -1,0 +1,7 @@
+
+terminal - git init
+-this initializes folder as a git repository
+
+git add .
+git commit
+save a snapshot of everything in its current state
