@@ -10,10 +10,13 @@ const Datastore = require('nedb');
 const fetch = require('node-fetch');
 //will tell server to load anything in a file called .env to an environment variable
 require('dotenv').config();
-console.log(process.env);
 //express comes in as a function which is executed and held in variable
 const app = express();
-app.listen(3000, () => console.log('listening at 3000'));
+//app.listen(3000, () => console.log('listening at 3000'));
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`starting server at ${port}`);
+});
 //opens index.html in the directory
 //can use filename or directory
 app.use(express.static('public'));

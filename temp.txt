@@ -3,5 +3,7 @@ terminal - git init
 -this initializes folder as a git repository
 
 git add .
-git commit
+git commit -m "{ENTER DISCRIPTION}"
 save a snapshot of everything in its current state
+
+.gitignore file stops the listed files from being added to github
