@@ -1,9 +1,12 @@
 
-terminal - git init
+terminal : git init
 -this initializes folder as a git repository
 
 git add .
 git commit -m "{ENTER DISCRIPTION}"
-save a snapshot of everything in its current state
+-save a snapshot of everything in its current state
+
+git push -u origin main
+-push to github
 
 .gitignore file stops the listed files from being added to github
