@@ -1,12 +1,9 @@
 
-terminal : git init
--this initializes folder as a git repository
 
-git add .
-git commit -m "{ENTER DISCRIPTION}"
--save a snapshot of everything in its current state
+heroku does't need .env file. You can set environment variables directly in terminal
 
-git push -u origin main
--push to github
+heroku config  
+-this will show current environment variables
 
-.gitignore file stops the listed files from being added to github
+heroku config:set API_KEY=
+- enter variable 
