@@ -19,8 +19,10 @@
         <h1> The Weather Here <i class="fa-solid fa-cloud-sun"></i></h1>
       </div>
     </header>
-    <div class="main mt-5">
-      <div class="text-warning"></div>
+    <div class="main">
+      <!-- <div class="text-warning">
+
+      </div> -->
   
       <p class="text-warning" >
         The weather here at <span id="latitude"></span>&deg;,
@@ -32,14 +34,14 @@
       </p>
       
       <form action="index.html">
-        <button class="btn btn-circle btn-warning btn-xl">check in</button>
+        <button class="btn btn-circle btn-warning mt-4"><h1 class="checkin font-weight-bold">check in</h1></button>
       </form>
 
+      <div class="mt-5">
+          <a class="text-decoration-none" href="/checkins">view checkins</a>
+      </div>
     </div>
 
-    <div class="mt-5">
-        <a href="/checkins">view checkins</a>
-    </div>
     
     <script src="sketch.js"></script>
   </div>
