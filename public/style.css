@@ -1,4 +1,24 @@
-p {
-    padding: 10px;
-    /* background-color: #ffaaff; */
+
+.btn-circle.btn-xl {
+  width: 16rem;
+  height: 16rem;
+  padding: 10px 16px;
+  border-radius: 8rem;
+  /* font-size: 24px; */
+  line-height: 1.33;
+}
+
+.btn-circle {
+  /* width: 90px;
+  height: 90px; */
+  padding: 6px 0px;
+  /* border-radius: 15px; */
+  text-align: center;
+  /* font-size: 12px; */
+  line-height: 1.42857;
+}
+
+.main {
+  /* margin: 10%; */
+  /* margin-top: 50px; */
 }

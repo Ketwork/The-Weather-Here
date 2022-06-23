@@ -7,23 +7,39 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2e7de7f884.js" crossorigin="anonymous"></script>
     <title>The weather Here</title>
 </head>
+<!-- bg-dark text-white vh-100 d-flex align-items-center justify-content-center text-center -->
+<body class="bg-dark text-white text-center">
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column ">
+    <header>
+      <div >
+        <h1> The Weather Here <i class="fa-solid fa-cloud-sun"></i></h1>
+      </div>
+    </header>
+    <div class="main mt-5">
+      <div class="text-warning"></div>
+  
+      <p class="text-warning" >
+        The weather here at <span id="latitude"></span>&deg;,
+        <span id="longitude"></span>&deg; is <span id="summary"></span> with 
+        a temperature of <span id="temp"></span>&deg; C. <br> The concentration of
+        particulate matter (pm25) is
+        <span id="aq_value"></span> µg/m³ last read on
+        <span id="aq_date"></span>.
+      </p>
+      
+      <form action="index.html">
+        <button class="btn btn-circle btn-warning btn-xl">check in</button>
+      </form>
 
-<body class="text-center bg-dark text-white">
-  <div class="">
-    <h1>The Weather Here</h1>
-    <div class="text-warning"><a href="/">check in</a> | <a href="/checkins">view checkins</a></div>
-    <p class="text-warning" >
-      The weather here at <span id="latitude"></span>&deg;,
-      <span id="longitude"></span>&deg; is <span id="summary"></span> with 
-      a temperature of <span id="temp"></span>&deg; C. The concentration of
-      particulate matter (pm25) is
-      <span id="aq_value"></span> µg/m³ last read on
-      <span id="aq_date"></span>.
-    </p>
-    
-    <button></button>
+    </div>
+
+    <div class="mt-5">
+        <a href="/checkins">view checkins</a>
+    </div>
     
     <script src="sketch.js"></script>
   </div>
