@@ -8,6 +8,7 @@
             let lat, lon, weather, air;
             //error handling with try catch
             try {
+              
             lat = position.coords.latitude;
             lon = position.coords.longitude;
             //add position to web page
@@ -19,12 +20,12 @@
             const json = await response.json();
             weather = json.weather
             air = json.air_quality;
+            console.log(json);
             document.getElementById('summary').textContent = weather.weather[0].main;
             document.getElementById('temp').textContent = weather.main.temp;
             document.getElementById('aq_value').textContent = air.data.current.pollution.aqius;
             document.getElementById('aq_date').textContent = air.data.current.pollution.ts;
-            console.log(json);
-
+            
             
         } catch (error) {
             air = {value: -1};
